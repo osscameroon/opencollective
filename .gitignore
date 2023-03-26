@@ -16,3 +16,6 @@ billing/billing
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+#secrets
+.env
