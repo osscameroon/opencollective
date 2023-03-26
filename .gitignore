@@ -4,6 +4,9 @@
 *.dll
 *.so
 *.dylib
+#exclude the billing folder from the .ignore entry
+!billing
+billing/billing
 
 # Test binary, built with `go test -c`
 *.test
