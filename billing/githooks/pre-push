@@ -1,0 +1,9 @@
+#!/bin/sh
+
+remote="$1"
+url="$2"
+
+make -C billing lint || exit 1
+make -C billing test || exit 1
+
+exit 0
