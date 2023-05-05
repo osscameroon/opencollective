@@ -20,6 +20,8 @@ func main() {
 	//Health check endpoint
 	router.GET("/health", handlers.Health)
 	router.GET("/contributors", handlers.GetContributors)
+	router.POST("/tier", handlers.PostTier)
+	router.DELETE("/tier", handlers.DeleteTier)
 
 	if err := router.Run(":7000"); err != nil {
 		return
